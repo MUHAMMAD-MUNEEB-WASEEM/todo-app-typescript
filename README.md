@@ -26,9 +26,9 @@ It helps you to detect errors while writing code and makes your code well organi
 
 **For transpilation**:
 
-For single file: tsc filename.ts
+* For single file: tsc filename.ts
 
-For multiple files as in our case: tsc
+* For multiple files as in our case: tsc
 
 **To get output**:
 
