@@ -8,14 +8,14 @@ TypeScript is a programming language developed and maintained by Microsoft. It i
 ## Benefits of Typescript
 It helps you to detect errors while writing code and makes your code well organized and error free
 
-##Creating Project
+## Creating Project
 
 1. npm init (to create package.json)
 2. src folder (where all working code or class placed)
 3. dist folder (where transpiled code resides)
 4. tsconfig.json (contains compilation code)
 
-##Creating files in Src folder
+## Creating files in Src folder
 
 1. item.ts (containes class template)
 2. itemCollection.ts (perform different methods on item)
