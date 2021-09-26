@@ -2,18 +2,26 @@
 
 import { Todo } from './todo';
 import { TodoCollection } from './todoCollection';
+import * as inquirer from 'inquirer';
 
 //object declaration
-let item : Todo = new Todo(1, "BreakFast", true);
-let item2 : Todo = new Todo(2, "Work");
-
-let itemCollection : TodoCollection = new TodoCollection();
+let todos: Todo[] = [
+    new Todo(1, 'Go For Walk'),
+    new Todo(2, 'Have BreakFast'),
+    new Todo(3, 'Do code'),
+    new Todo(4, 'Go to Sleep', true)
+]
+let itemCollection : TodoCollection = new TodoCollection('muneeb', todos);
 
 
 //instance calling
-item.printTask();
-item2.printTask();
+// todos[0].printTask();
+// todos[1].printTask();
 
-itemCollection.addTodo('Eating Lunch');
-itemCollection.taskDone(1);
-// itemCollection.printAll()
+// itemCollection.addTodo('Doing Code');
+// itemCollection.getTodoByStatus()
+// itemCollection.markComplete(1, true);
+itemCollection.deleteComplete()
+// itemCollection.addTodo('Doing code');
+// itemCollection.taskDone(1);
+
