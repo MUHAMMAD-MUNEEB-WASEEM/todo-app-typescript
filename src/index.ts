@@ -2,6 +2,7 @@
 
 import { Todo } from './todo';
 import { TodoCollection } from './todoCollection';
+import { JsonTodoCollection } from './jsonTodoCollection';
 import * as inquirer from 'inquirer';
 
 //object declaration
@@ -11,7 +12,7 @@ let todos: Todo[] = [
     new Todo(3, 'Do code'),
     new Todo(4, 'Go to Sleep', true)
 ]
-let itemCollection : TodoCollection = new TodoCollection('muneeb', todos);
+let itemCollection : TodoCollection = new JsonTodoCollection('muneeb', todos);
 
 let showComplete = true
 

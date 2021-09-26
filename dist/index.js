@@ -2,7 +2,7 @@
 //In this, we can create different objects of class
 Object.defineProperty(exports, "__esModule", { value: true });
 const todo_1 = require("./todo");
-const todoCollection_1 = require("./todoCollection");
+const jsonTodoCollection_1 = require("./jsonTodoCollection");
 const inquirer = require("inquirer");
 //object declaration
 let todos = [
@@ -11,7 +11,7 @@ let todos = [
     new todo_1.Todo(3, 'Do code'),
     new todo_1.Todo(4, 'Go to Sleep', true)
 ];
-let itemCollection = new todoCollection_1.TodoCollection('muneeb', todos);
+let itemCollection = new jsonTodoCollection_1.JsonTodoCollection('muneeb', todos);
 let showComplete = true;
 function displayTodoList() {
     console.log(`${itemCollection.userName}'s Todo List `

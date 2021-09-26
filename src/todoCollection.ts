@@ -12,7 +12,7 @@ export class TodoCollection {
 
     //variable
     private nextId: number = 1;
-    private itemMap = new Map<number, Todo>();
+    protected itemMap = new Map<number, Todo>();
 
     //constructor
     public constructor(public userName:string, public items: Todo[] = []){
