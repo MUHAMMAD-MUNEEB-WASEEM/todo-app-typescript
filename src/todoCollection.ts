@@ -2,6 +2,12 @@
 
 import { Todo } from "./todo";
 
+type TodoCounts = {
+    total: number,
+    incomplete: number,
+    complete: number
+}
+
 export class TodoCollection {
 
     //variable
@@ -33,7 +39,6 @@ export class TodoCollection {
         return [...this.itemMap.values()].filter((item)=> item.done===complete)
     }
 
-    
     markComplete(id:number, complete:boolean){
         let item = this.getTodoById(id);
         if (item){
@@ -47,6 +52,15 @@ export class TodoCollection {
                 this.itemMap.delete(item.taskId);
             }
         })
+    }
+
+    getTodoCounts():TodoCounts{
+    
+        return {
+            total: this.itemMap.size,
+            incomplete: this.getTodoByStatus(false).length,
+            complete: this.getTodoByStatus(true).length
+        }
     }
 
 

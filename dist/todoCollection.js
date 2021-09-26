@@ -42,5 +42,12 @@ class TodoCollection {
             }
         });
     }
+    getTodoCounts() {
+        return {
+            total: this.itemMap.size,
+            incomplete: this.getTodoByStatus(false).length,
+            complete: this.getTodoByStatus(true).length
+        };
+    }
 }
 exports.TodoCollection = TodoCollection;

@@ -33,7 +33,7 @@ export class Todo {
     //methods
 
     public printTask():void {
-        console.log(`Task Id = ${this.taskId}, Task = ${this.task}, Completed = ${this.done}`)
+        console.log(`${this.taskId}\t${this.task} ${this.done? "\t(complete)": ""}`);
     }
 
     
