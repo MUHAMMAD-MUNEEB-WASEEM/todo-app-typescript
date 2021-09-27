@@ -22,6 +22,14 @@ It helps you to detect errors while writing code and makes your code well organi
 3. index.ts (object declaration and instance calling)
 4. jsonTodoCollection.ts (containing code store in todos.json file)
 
+## Dependencies To Install:
+
+1. npm i inquirer@7.3.3  (to get input from cmd)
+* npm i --save-dev @types/inquirer   (its type for dev)
+
+2. npm i lowdb@1.0.0     (js database)
+* npm i --save-dev @types/lowdb (its type for dev)
+
 ## Run Code
 
 **For transpilation**:
