@@ -96,7 +96,9 @@ function promptComplete(): void {
                    promptUser();
                    break;
 
-            //    case Commands.Purge:
+                case Commands.Quit:
+                    break;
+                    
            }
        })
    }

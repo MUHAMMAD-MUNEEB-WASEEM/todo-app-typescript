@@ -81,7 +81,8 @@ function promptUser() {
                 itemCollection.deleteComplete();
                 promptUser();
                 break;
-            //    case Commands.Purge:
+            case Commands.Quit:
+                break;
         }
     });
 }

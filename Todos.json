@@ -18,11 +18,21 @@
     {
       "taskId": 4,
       "task": "Go to Sleep",
-      "done": true
+      "done": false
     },
     {
       "taskId": 5,
       "task": "New task",
+      "done": false
+    },
+    {
+      "taskId": 6,
+      "task": "Task 7",
+      "done": false
+    },
+    {
+      "taskId": 7,
+      "task": "Task 8",
       "done": false
     }
   ]
